@@ -51,6 +51,19 @@ def main():
     print(region.get_multi(["7", "8", "9"]))
     print(region.get_multi(["7", "8", "9"]))
 
+    """
+    Вывод:
+    sleeping and requesting user 7
+    user with id 7
+    user with id 7
+    sleeping and requesting user 8
+    user with id 8
+    user with id 8
+    user with id 8
+    ['user with id 7', <dogpile.cache.api.NoValue object>, <dogpile.cache.api.NoValue object>]
+    ['user with id 7', <dogpile.cache.api.NoValue object>, <dogpile.cache.api.NoValue object>]
+    """
+
 
 if __name__ == "__main__":
     main()
